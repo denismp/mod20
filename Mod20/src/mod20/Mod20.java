@@ -43,6 +43,12 @@ public class Mod20 {
 		System.out.println(myMore.wordAppend(test3));
 	}
 	
+//	Return true if the given non-negative number is 1 or 2 more than a multiple of 20. See also: Introduction to Mod
+//		
+//		
+//	more20(20) → false
+//	more20(21) → true
+//	more20(22) → true
 	public boolean more20(int n) {
 		if( n % 20 == 1 )
 			return true;
@@ -51,6 +57,13 @@ public class Mod20 {
 		return false;		  
 	}
 
+
+//	Given a non-negative number "num", return true if num is within 2 of a multiple of 10. Note: (a % b) is the remainder of dividing a by b, so (7 % 5) is 2. See also: Introduction to Mod
+//	
+//	
+//	nearTen(12) → true
+//	nearTen(17) → false
+//	nearTen(19) → true
 	public boolean nearTen(int num) {
 		if( num % 10 < 3 )
 			return true;
@@ -59,6 +72,10 @@ public class Mod20 {
 		return false;  
 	}
 	
+//	Loop over the given array of strings to build a result string like this: when a string appears the 2nd, 4th, 6th, etc. time in the array, append the string to the result. Return the empty string if no string appears a 2nd time.
+//	wordAppend(["a", "b", "a"]) → "a"
+//	wordAppend(["a", "b", "a", "c", "a", "d", "a"]) → "aa"
+//	wordAppend(["a", "", "a"]) → "a"	
 	public String wordAppend(String[] strings) {
 		String rVal = "";
 		Map<String,Integer> myMap = new HashMap<String, Integer>();
